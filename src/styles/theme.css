@@ -1,0 +1,962 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", serif;
+}
+
+body{
+    background-color: white;
+}
+header{
+    padding: 10px;
+    width: 1100px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+header .logo .div{
+    background-color: #999;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .logo .div p{
+    font-size: 18px;
+    color: white;
+    font-family: 'Michroma', sans-serif;
+}
+header .logo span{
+    font-size: 18px;
+    font-family: 'Michroma', sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #000;
+}
+header nav{
+    display: flex;
+    gap: 30px;
+}
+header nav a{
+    color: #000;
+    font-size: 17px;
+    font-weight: 500;
+    transition: .5s ease;
+}
+header .imgs{
+    display: flex;
+    gap: 10px;
+}
+header .imgs img{
+    cursor: pointer;
+    transition: .5s ease;
+}
+header .imgs img:hover{
+    transform: scale(1.2) translateY(-5px);
+}
+.hero{
+    margin: 20px auto;
+    background-image: url('./../images/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    height: 85vh;
+    position: relative;
+}
+.hero .hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 650px;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+}
+.hero .hero-text .hero-text-top{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    width: 48%;
+    padding: 5px;
+    border-radius: 10px;
+}
+.hero .hero-text .hero-text-top span{
+    font-size: 17px;
+}
+.hero .hero-text .hero-text-top img{
+    width: 25px;
+}
+.hero .hero-text .hero-text-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.hero .hero-text .hero-text-bottom h1{
+    font-size: 33px;
+    width: 85%;
+    font-weight: 700;
+    color: white;
+}
+.hero .hero-text .hero-text-bottom p{
+    font-size: 17px;
+    width: 85%;
+    color: white;
+}
+.hero .hero-text .hero-text-bottom .btn{
+    background-color: rgba(32, 178, 171, 0.734);
+    width: 130px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    cursor: pointer;
+}
+.hero .hero-text .hero-text-bottom .btn button{
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    color: white; 
+    cursor: pointer;
+}
+.discount{
+    width: 1100px;
+    margin: 20px auto;
+}
+ul.shop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+ul.shop > li {
+    background-color: #f5f5f5;
+    padding: 15px 20px;
+    display: flex;
+}
+ul.shop > li .imgs img{
+    width: 250px;
+    margin-top: 50px;
+}
+ul.shop > li > .content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 65%;
+}
+
+ul.shop > li > .content > h4 {
+    font-weight: 400;
+}
+
+ul.shop > li > .content > h2 {
+    font-size: 22pt;
+    line-height: 40px;
+}
+
+ul.shop > li > .content > p {
+    font-size: 11pt;
+}
+
+/* last child i.e. women's collection */
+ul.shop > li:last-child {
+    background-color: #f4bd62;
+}
+
+ul.shop > li:last-child div.button {
+    background-color: #3e1801;
+    color: white;
+}
+
+/* button */
+div.button {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    color: white;
+    background-color: #f4bd62;
+    padding: 13px;
+    justify-content: center;
+    align-items: center;
+    width: 135px;
+    cursor: pointer;
+}
+.products{
+    width: 1100px;
+    margin: 50px auto;
+}
+.products ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.products ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 300px;
+    background-color: lightgray;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.products ul li:hover{
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.2);
+}
+.products ul li strong {
+    display: flex;
+    gap: 10px;
+}
+.products ul li strong p:first-child {
+    text-decoration: line-through;
+}
+.products ul li .images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+
+}
+.products ul li .images img{
+    padding: 5px;
+    border-radius: 50%;
+    background-color: white;
+}
+.products ul li .spa span{
+    padding: 5px;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    position: absolute;
+    top: 3%;
+}
+.products ul li .ratings{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.products ul li .ratings .star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.products ul li .ratings .star img{
+    width: 30px;
+}
+.products ul li .ratings .star span{
+    font-size: 15px;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: lightgray;
+}
+.services{
+    width: 1100px;
+    margin: 50px auto;
+}
+.services ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.services ul li{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.services ul li img{
+    width: 70px;
+}
+.services ul li .texts{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.services ul li .texts p{
+    font-size: 20px;
+    font-weight: 700;
+}
+footer{
+    background-color: #3e1801cf;
+    height: 100px;
+    display: flex;
+}
+footer .container{
+    width: 1100px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .container span{
+    color: white;
+    font-size: 15px;
+}
+footer .container .languages{
+    display: flex;
+    gap: 10px;
+    color: white;
+}
+footer .container .languages .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+footer .container .languages .links p{
+    color: white;
+}
+
+/* Product Details */
+
+.details{
+    background-color: #f5f5f5;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.details .product-details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    color: black;
+}
+.details .product-details h1{
+    font-size: 45px;
+}
+.details .product-details span{
+    font-size: 20px;
+}
+.details .image1{
+    position: absolute;
+    right: 10%;
+}
+.details .image1 img{
+    width: 200px;
+}
+.details .image2{
+    position: absolute;
+    left: 10%;
+}
+.details .image2 img{
+    width: 200px;
+}
+.full-details{
+    width: 1100px;
+    margin: 50px auto;
+}
+.full-details .container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.full-details .container .images{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 85%;
+}
+
+.loader {text-align: center;}
+
+
+.full-details .container .images .top-image{
+    background-color: lightgray;
+    position: relative;
+    height: 500px;
+}
+.full-details .container .images .top-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.full-details .container .images .bottom-image{
+    display: flex;
+    gap: 10px;
+}
+.full-details .container .images .bottom-image .img1, .img2, .img3, .img4{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+.img1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.full-details .container .images .top-image .prev{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    cursor: pointer;
+    padding: 8px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.full-details .container .images .top-image .next{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    cursor: pointer;
+    padding: 8px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.full-details .container .preferences{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid lightgray;
+    padding: 20px;
+}
+.full-details .container .preferences .ratings{
+    display: flex;
+    align-items: center;
+}
+.full-details .container .preferences strong{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    gap: 10px;
+}
+.full-details .container .preferences strong p:nth-child(1){
+    text-decoration: line-through;
+}
+.colors{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.colors .color{
+    display: flex;
+    gap: 20px;
+}
+.colors div.active {
+    border: 3px solid black;
+}
+.colors .color .color1{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: brown;
+    transition: .5s ease;
+    cursor: pointer;
+}
+.colors .color .color2{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    transition: .5s ease;
+    cursor: pointer;
+}
+.colors .color .color3{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: lightseagreen;
+    transition: .5s ease;
+    cursor: pointer;
+}
+.colors .color .color4{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: maroon;
+    transition: .5s ease;
+    cursor: pointer;
+}
+.colors .color .color5{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: blue;
+    transition: .5s ease;
+    cursor: pointer;
+}
+.colors .color .color1:hover{
+    border: 2px solid black;
+    transform: scale(1.2);
+}
+.colors .color .color2:hover{
+    border: 2px solid black;
+    transform: scale(1.2);
+}
+.colors .color .color3:hover{
+    border: 2px solid black;
+    transform: scale(1.2);
+}
+.colors .color .color4:hover{
+    border: 2px solid black;
+    transform: scale(1.2);
+}
+.colors .color .color5:hover{
+    border: 2px solid black;
+    transform: scale(1.2);
+}
+.quantity{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.quantity .numbers span{
+    padding: 5px 10px;
+    font-size: 26px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.quantity .numbers input {
+    width: 53px;
+    font-size: 25pt;
+    text-align: center;
+    border: 1px solid black;
+    margin: 0 5px;
+    height: 42px;
+}
+.btns #btn1{
+    background-color: brown;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+.btns #btn2{
+    background-color: yellow;
+    border: none;
+    padding: 10px;
+    color: black;
+    cursor: pointer;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.btns #btn3{
+    background-color: maroon;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Shopping page css */
+.shopping-hero-container,.wishlist-hero-container{
+    text-align: center;
+    padding: 50px;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.shopping-hero-container h1, .wishlist-hero-container h1{
+    font-size: 36pt;
+}
+.shopping-hero-container span,.wishlist-hero-container span{
+    font-size: 14pt;
+    font-weight: 600;
+}
+.shop-products-section{
+    display: flex;
+    gap: 30px;
+    padding: 50px 100px 150px 100px;
+}
+.shop-products-section .product-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.shop-products-section .product-detail-heading{
+    background-color: #f4bd62;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 15px 20px;
+}
+.shop-products-section .product-detail-heading span{
+    font-size: 16pt;
+    font-weight: 600;
+}
+.shop-products-section .product-detail-heading span:nth-child(1){
+    width: 400px;
+}
+.shop-products-section .product-detail-heading span:nth-child(2){
+    width: 140px;
+}
+.shop-products-section .product-detail-heading span:nth-child(3){
+    width: 140px;
+}
+.shop-products-section .product-detail-heading span:nth-child(4){
+    width: 120px;
+}
+.shop-products-section .product-detail ul{
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+}
+.shop-products-section .product-detail ul li{
+    display: flex;
+    padding: 15px 0px;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 2px solid lightgray;
+}
+.shop-products-section .product-detail ul li .image{
+    width: 80px;
+    height: 100px;
+}
+.shop-products-section .product-detail ul li .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.shop-products-section .product-detail ul li .product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 300px;
+}
+.shop-products-section .product-detail ul li .product h6{
+    font-size: 16pt;
+}
+.shop-products-section .product-detail ul li  p{
+    font-size: 13pt;
+}
+.shop-products-section .product-detail ul li .qty{width: 100px;}
+.shop-products-section .product-detail ul li .btn{
+    width: 170px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+}
+.shop-products-section .product-detail ul li .btn .box{
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+.shop-products-section .product-detail ul li .btn p{
+    font-size: 15pt;
+    font-weight: 500;
+}
+.shop-products-section .product-detail ul li .btn img{
+    cursor: pointer;
+    border: 1px solid black;
+}
+.shop-products-section .product-detail ul li .ttl{
+    width: 160px;
+}
+
+.shop-products-section .product-detail .actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.shop-products-section .product-detail .actions .coupon{
+    display: flex;
+    gap: 10px;
+}
+.shop-products-section .product-detail .actions .coupon input{
+    padding: 16px 20px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    font-size: 13pt;
+}
+.shop-products-section .product-detail .actions .coupon button{
+    padding: 10px 20px;
+    background-color: #3e1801;
+    color: lightgray;
+    font-size: 13pt;
+    text-transform: capitalize;
+    border: 2px solid lightgray;
+    cursor: pointer;
+}
+.shop-products-section .product-detail .actions .clearCart p{
+    font-size: 13pt;
+    font-weight: 600;
+    color: #3e1801;
+    text-decoration: underline;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+/* other summary */
+.shop-products-section .product-summary{
+    width: 400px;
+    height: max-content;
+    border: 2px solid lightgray;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.shop-products-section .product-summary h6{
+    font-size: 16pt;
+}
+.shop-products-section .product-summary .items ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.shop-products-section .product-summary .items ul li{
+    display: flex;
+    justify-content: space-between;  
+}
+.shop-products-section .product-summary .items ul li p{
+    font-weight: 600;
+}
+.shop-products-section .product-summary .items ul li:nth-child(1),.shop-products-section .product-summary .items ul li:nth-child(6){
+    border-top: 2px solid lightgray;
+    padding-top: 15px;
+}
+.shop-products-section .product-summary .btn{
+    text-align: center;
+    background-color: #3e1801;
+    padding: 15px 20px;
+    color: white;
+    cursor: pointer;
+}
+.shop-products-section .product-summary .btn p{
+    font-size: 14pt;
+}
+
+/* shopping features */
+.shopping-features{
+    padding: 50px 100px;
+    border-top: 2px solid lightgray;
+}
+.shopping-features ul{
+    display: flex;
+    justify-content: space-between;
+}
+.shopping-features ul li{
+    display: flex;
+    gap: 20px;
+}
+.shopping-features ul li img{
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+}
+.shopping-features ul li .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.shopping-features ul li .content span{
+    font-weight: 600;
+}
+.shopping-features ul li .content p{
+    font-size: 13pt;
+}
+
+/* wishlist page css */
+.wishlist-product-section{
+    padding: 50px 100px 150px 100px;
+}
+.wishlist-product-section .wproduct-detail-heading{
+    background-color: #f4bd62;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 15px 20px;
+}
+.wishlist-product-section .wproduct-detail-heading span{
+    font-size: 16pt;
+    font-weight: 600;
+}
+.wishlist-product-section .wproduct-detail-heading span:nth-child(1){
+    width: 480px;
+}
+.wishlist-product-section .wproduct-detail-heading span:nth-child(2){
+    width: 200px;
+    
+}
+.wishlist-product-section .wproduct-detail-heading span:nth-child(3){
+    width: 300px;
+
+}
+.wishlist-product-section .wproduct-detail-heading span:nth-child(4){
+    width: 400px;
+}
+.wishlist-product-section ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.wishlist-product-section ul li{
+    display: flex;
+    gap: 10px;
+    padding: 15px 0px;
+    align-items: center;
+    border-bottom: 2px solid lightgray;
+}
+.wishlist-product-section ul li .wimage {
+    width: 80px;
+    height: 100px;
+    overflow: hidden;
+}
+.wishlist-product-section ul li .wimage img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.wishlist-product-section ul li .wproduct{
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.wishlist-product-section ul li .wproduct p{
+    font-size: 13pt;
+}
+.wishlist-product-section ul li p:nth-child(4){
+    width: 180px;
+    font-size: 14pt;
+
+}
+.wishlist-product-section ul li p:nth-child(5){
+    width: 280px;
+    font-size: 14pt;
+
+}
+.wishlist-product-section ul li .inStock{
+    color: #00c851;
+    width: 180px;
+    font-size: 13pt;
+}
+.wishlist-product-section ul li .button{
+    background-color: #3e1801;
+    width: 170px;
+    color: white;
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+    cursor: pointer;
+}
+.wishlist-product-section ul li .button p{
+    font-size: 13pt;
+}
+
+/* wishlist-link section */
+.wishlist-link-section{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.wishlist-link-section .wishlist-links{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.wishlist-link-section .wishlist-links p{
+    text-decoration: underline;
+    color: #3e1801;
+}
+.wishlist-link-section .wishlist-links input{
+    width: 200px;
+    padding: 15px 25px;
+    font-size: 13pt;
+    border: 2px solid lightgray;
+}
+.wishlist-link-section .wishlist-links button{
+    padding: 15px 25px;
+    background-color: #3e1801;
+    color: white;
+    cursor: pointer;
+    font-size: 13pt;
+}
+.wishlist-link-section .wishlist-cart{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.wishlist-link-section .wishlist-cart p{
+    text-decoration: underline;
+    font-weight: 600;
+    color: #3e1801;
+}
+.wishlist-link-section .wishlist-cart button{
+    background-color: #3e1801;
+    color: white;
+    padding: 16px 25px;
+    font-size: 16pt;
+}
+.outOfStock{
+    color: #dc3545;
+    width: 180px;
+    font-size: 13pt;
+}
+
+@media (max-width: 1024px){
+    .shop-products-section{flex-direction: column; align-items: center; gap: 50px; padding-bottom: 100px !important;}
+    .wishlist-product-section{padding: 10px;}
+}
+@media screen and (max-width: 1366px) {
+	.shop-products-section,.wishlist-product-section{padding: 20px;}
+}
+.reviews{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    position: relative;
+}
+.reviews .star{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.reviews .star img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
